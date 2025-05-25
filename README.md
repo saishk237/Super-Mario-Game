@@ -7,11 +7,11 @@ A 2D side-scrolling platformer game inspired by Super Mario Bros, built with PyG
 ## Screenshots
 
 <div align="center">
-  <img src="screenshots/gameplay.png" alt="Gameplay" width="400"/>
+  <img src="screenshots/gameplay.png" alt="Gameplay" width="800"/>
   <br/> <br/>
-  <img src="screenshots/level2.png" alt="Level 2" width="400"/>
+  <img src="screenshots/level2.png" alt="Level 2" width="800"/>
   <br/> <br/>
-  <img src="screenshots/game_over.png" alt="Game Over Screen" width="400"/>
+  <img src="screenshots/game_over.png" alt="Game Over Screen" width="800"/>
 </div>
 
 ## Features

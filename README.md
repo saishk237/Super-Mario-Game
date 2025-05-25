@@ -2,7 +2,17 @@
 
 A 2D side-scrolling platformer game inspired by Super Mario Bros, built with PyGame.
 
-![Game Screenshot](screenshot.png)
+![Game Screenshot](screenshots/gameplay.png)
+
+## Screenshots
+
+<div align="center">
+  <img src="screenshots/gameplay.png" alt="Gameplay" width="400"/>
+  <img src="screenshots/level2.png" alt="Level 2" width="400"/>
+  <br/>
+  <img src="screenshots/enemies.png" alt="Enemies" width="400"/>
+  <img src="screenshots/game_over.png" alt="Game Over Screen" width="400"/>
+</div>
 
 ## Features
 
@@ -38,37 +48,31 @@ A 2D side-scrolling platformer game inspired by Super Mario Bros, built with PyG
    python main.py
    ```
 
-## Game Structure
-
-The game is built using object-oriented design with the following classes:
-
-- **Game**: Main game loop and state management
-- **Player**: Player character with movement and collision logic
-- **Enemy**: Enemy behavior and interactions
-- **Platform**: Ground, bricks, and pipes for the level
-- **Coin**: Collectible items with animation
-- **QuestionBlock**: Interactive blocks that can be hit from below
-- **LevelManager**: Handles level loading and progression
-- **GameUI**: Displays score, lives, and other UI elements
-
 ## Project Structure
 
 ```
 mario_platformer/
-├── main.py              # Main game loop and initialization
-├── player.py            # Player character class
-├── enemy.py             # Enemy classes
-├── platform_tile.py     # Platform class
-├── coin.py              # Coin class
-├── question_block.py    # Question block class
-├── level_manager.py     # Level loading and management
-├── game_ui.py           # UI rendering
-├── requirements.txt     # Dependencies
-├── README.md            # Documentation
-├── assets/              # Game assets folder
-│   ├── images/          # Sprites and images
-│   └── sounds/          # Sound effects and music
-└── levels/              # Level data files
+├── main.py                  # Entry point for the game
+├── assets/                  # Game assets folder
+│   ├── images/              # Sprites and images
+│   └── sounds/              # Sound effects and music
+├── levels/                  # Level data files
+├── screenshots/             # Game screenshots for documentation
+└── src/                     # Source code
+    ├── core/                # Core game functionality
+    │   ├── main.py          # Main game loop and state management
+    │   └── level_manager.py # Level loading and progression
+    ├── entities/            # Game entities
+    │   ├── player.py        # Player character class
+    │   ├── enemy.py         # Enemy classes
+    │   ├── platform_tile.py # Platform class
+    │   ├── coin.py          # Coin class
+    │   └── question_block.py # Question block class
+    ├── ui/                  # User interface
+    │   └── game_ui.py       # UI rendering
+    └── utils/               # Utility functions
+        ├── constants.py     # Game constants
+        └── asset_loader.py  # Asset loading utilities
 ```
 
 ## Game Mechanics

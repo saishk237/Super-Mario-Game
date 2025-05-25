@@ -1,7 +1,7 @@
 import pygame
 import os
 from pygame.locals import *
-from coin import Coin
+from .coin import Coin
 
 class QuestionBlock(pygame.sprite.Sprite):
     def __init__(self, x, y, content="coin"):

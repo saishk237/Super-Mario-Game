@@ -1,6 +1,7 @@
 import pygame
 import os
 from pygame.locals import *
+from ..utils.constants import GRAVITY, FRICTION, PLAYER_ACCELERATION, PLAYER_MAX_SPEED, PLAYER_JUMP_POWER
 
 class Player(pygame.sprite.Sprite):
     def __init__(self, x, y):
@@ -33,11 +34,11 @@ class Player(pygame.sprite.Sprite):
         # Physics variables
         self.velocity_x = 0
         self.velocity_y = 0
-        self.acceleration = 0.5
-        self.friction = 0.2
-        self.gravity = 0.8
-        self.jump_power = -16
-        self.max_speed = 8
+        self.acceleration = PLAYER_ACCELERATION
+        self.friction = FRICTION
+        self.gravity = GRAVITY
+        self.jump_power = PLAYER_JUMP_POWER
+        self.max_speed = PLAYER_MAX_SPEED
         
         # State variables
         self.is_jumping = False
